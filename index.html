@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoni - Solutions Logicielles pour l'intérim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #0077b6, #023e8a);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004e92;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d4d4d4;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        #accueil {
+            background: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 8rem 2rem;
+        }
+        #accueil h2, #accueil p {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem;
+            display: inline-block;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .service {
+            flex: 1;
+            min-width: 250px;
+            margin: 1.5rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #004e92;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeIn">
+        <h1>Bienvenue chez Tomoni</h1>
+        <p>Innovation et solutions logicielles pour les entreprises d'intérim</p>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="accueil" class="animate__animated animate__fadeInUp">
+        <h2>À propos de Tomoni</h2>
+        <p>Tomoni est une entreprise spécialisée dans la création de logiciels et d'applications mobiles sur mesure pour les entreprises d'intérim. Notre objectif est de vous fournir des outils performants pour optimiser la gestion de vos ressources humaines.</p>
+    </section>
+    <section id="services">
+        <h2 class="animate__animated animate__fadeInUp">Nos Services</h2>
+        <div class="services">
+            <div class="service animate__animated animate__zoomIn">
+                <h3>Logiciels de Gestion</h3>
+                <p>Des solutions logicielles complètes pour la gestion de vos employés intérimaires.</p>
+            </div>
+            <div class="service animate__animated animate__zoomIn">
+                <h3>Applications Mobiles</h3>
+                <p>Des applications mobiles pour rester connecté avec vos employés où que vous soyez.</p>
+            </div>
+            <div class="service animate__animated animate__zoomIn">
+                <h3>Support Technique</h3>
+                <p>Un support technique dédié pour vous accompagner au quotidien.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="animate__animated animate__fadeInUp">Contactez-nous</h2>
+        <p>Email: contact@tomoni.solutions</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Tomoni. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,2 +1,3 @@
-# tomoni-solution.github.io
-Tomoni temporary showcase website
+# Tomoni Solution mocked landing page
+
+Live at https://tomoni-solution.github.io.
