@@ -3,126 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomoni - Solutions Logicielles pour l'intérim</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
-        header {
-            background: linear-gradient(135deg, #0077b6, #023e8a);
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-            animation: fadeIn 2s;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #004e92;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: white;
-            margin: 0 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #d4d4d4;
-        }
-        section {
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        #accueil {
-            background: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
-            background-size: cover;
-            color: white;
-            padding: 8rem 2rem;
-        }
-        #accueil h2, #accueil p {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 1rem;
-            display: inline-block;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        .service {
-            flex: 1;
-            min-width: 250px;
-            margin: 1.5rem;
-            padding: 2rem;
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .service:hover {
-            transform: translateY(-10px);
-        }
-        footer {
-            background-color: #004e92;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    <title>Tomoni - Logiciel de gestion des intérimaires | +30% de productivité</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="animate__animated animate__fadeIn">
-        <h1>Bienvenue chez Tomoni</h1>
-        <p>Innovation et solutions logicielles pour les entreprises d'intérim</p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TOMONI</h1>
+                <p>Logiciel de gestion des intérimaires</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#chiffres">Chiffres clés</a></li>
+                    <li><a href="#tarifs">Tarifs</a></li>
+                    <li><a href="#temoin">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="#demo" class="btn">Demander une démo gratuite</a>
+            </div>
+        </div>
     </header>
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="accueil" class="animate__animated animate__fadeInUp">
-        <h2>À propos de Tomoni</h2>
-        <p>Tomoni est une entreprise spécialisée dans la création de logiciels et d'applications mobiles sur mesure pour les entreprises d'intérim. Notre objectif est de vous fournir des outils performants pour optimiser la gestion de vos ressources humaines.</p>
-    </section>
-    <section id="services">
-        <h2 class="animate__animated animate__fadeInUp">Nos Services</h2>
-        <div class="services">
-            <div class="service animate__animated animate__zoomIn">
-                <h3>Logiciels de Gestion</h3>
-                <p>Des solutions logicielles complètes pour la gestion de vos employés intérimaires.</p>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Optimisez la gestion de vos intérimaires avec Tomoni</h2>
+                <p>Notre logiciel permet aux agences d'intérim de <strong>gagner jusqu'à 30% de temps</strong> sur la gestion des missions, des contrats et des talents. Automatisez vos processus et concentrez-vous sur l'essentiel : le placement de vos intérimaires.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>+30%</h3>
+                        <p>de productivité</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50%</h3>
+                        <p>de réduction des tâches administratives</p>
+                    </div>
+                    <div class="stat">
+                        <h3>95%</h3>
+                        <p>de satisfaction client</p>
+                    </div>
+                </div>
+<!--                <a href="#demo" class="btn">Essayer gratuitement pendant 15 jours</a>-->
             </div>
-            <div class="service animate__animated animate__zoomIn">
-                <h3>Applications Mobiles</h3>
-                <p>Des applications mobiles pour rester connecté avec vos employés où que vous soyez.</p>
-            </div>
-            <div class="service animate__animated animate__zoomIn">
-                <h3>Support Technique</h3>
-                <p>Un support technique dédié pour vous accompagner au quotidien.</p>
+            <div class="hero-image">
+                <img src="images/dashboard-tomoni.png" alt="Tableau de bord Tomoni">
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2 class="animate__animated animate__fadeInUp">Contactez-nous</h2>
-        <p>Email: contact@tomoni.solutions</p>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Une solution complète pour les professionnels de l'intérim</h2>
+            <p class="subtitle">Tomoni est conçu pour répondre aux besoins spécifiques des agences d'intérim, des ETT et des entreprises utilisant des travailleurs temporaires.</p>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Gestion centralisée des talents</h3>
+                    <p>Accédez à une base de données unique pour gérer les profils, compétences, disponibilités et évaluations de vos intérimaires. Plus de 10 000 profils déjà référencés.</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Automatisation des contrats</h3>
+                    <p>Générez et signez électroniquement vos contrats en <strong>moins de 5 minutes</strong>. Intégration avec DocuSign et Yousign.</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Planification intelligente</h3>
+                    <p>Optimisez la planification des missions avec un algorithme qui réduit les temps de latence de <strong>40%</strong>.</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Tableaux de bord analytiques</h3>
+                    <p>Suivez vos indicateurs clés (taux de placement, turnover, rentabilité) en temps réel. Exportable en PDF et Excel.</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Application mobile dédiée</h3>
+                    <p>Permettez à vos intérimaires de consulter leurs missions, valider leurs heures et télécharger leurs documents depuis leur smartphone.</p>
+                </div>
+                <div class="solution-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Intégrations API</h3>
+                    <p>Connectez Tomoni à vos outils existants (SIRH, ERP, logiciels de paie) pour une gestion fluide et sans doublons.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Chiffres Clés Section -->
+    <section id="chiffres" class="chiffres">
+        <div class="container">
+            <h2>Des résultats concrets pour nos clients</h2>
+            <div class="chiffres-grid">
+                <div class="chiffre-card">
+                    <h3>200+</h3>
+                    <p>agences d'intérim nous font confiance</p>
+                </div>
+                <div class="chiffre-card">
+                    <h3>150 000+</h3>
+                    <p>missions gérées chaque année</p>
+                </div>
+                <div class="chiffre-card">
+                    <h3>98%</h3>
+                    <p>de contrats générés sans erreur</p>
+                </div>
+                <div class="chiffre-card">
+                    <h3>24/7</h3>
+                    <p>support technique réactif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cas d'usage Section -->
+    <section class="cas-usage">
+        <div class="container">
+            <h2>Comment Tomoni transforme la gestion de l'intérim</h2>
+            <div class="cas-grid">
+                <div class="cas-card">
+                    <h3>Réduction des coûts administratifs</h3>
+                    <p>Automatisez la saisie des heures, la génération des bulletins de paie et le suivi des absences. Économisez <strong>jusqu'à 12 000€ par an</strong>.</p>
+                </div>
+                <div class="cas-card">
+                    <h3>Amélioration de la satisfaction client</h3>
+                    <p>Avec un accès en temps réel aux informations, vos clients réduisent leurs délais de recrutement de <strong>35%</strong>.</p>
+                </div>
+                <div class="cas-card">
+                    <h3>Conformité légale garantie</h3>
+                    <p>Tomoni intègre les dernières mises à jour légales (convention collective, RGPD) pour vous éviter tout risque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section id="temoin" class="temoin">
+        <div class="container">
+            <h2>Ils nous font confiance</h2>
+            <div class="temoin-grid">
+                <div class="temoin-card">
+                    <p>"Grâce à Tomoni, nous avons réduit nos coûts de gestion de 20% tout en améliorant la satisfaction de nos intérimaires. Un outil indispensable !"</p>
+                    <div class="temoin-info">
+                        <h4>Sophie Martin</h4>
+                        <p>Directrice, Agence Intérim Lyon</p>
+                    </div>
+                </div>
+                <div class="temoin-card">
+                    <p>"La planification des missions est devenue un jeu d'enfant. Nos équipes gagnent un temps précieux et nos clients sont plus satisfaits."</p>
+                    <div class="temoin-info">
+                        <h4>Thomas Dubois</h4>
+                        <p>Responsable Opérations, Staff'Up</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section id="tarifs" class="tarifs">
+        <div class="container">
+            <h2>Des offres adaptées à votre taille</h2>
+            <div class="tarifs-grid">
+                <div class="tarif-card">
+                    <h3>Starter</h3>
+                    <p class="price">49€/mois</p>
+                    <p class="description">Idéal pour les petites agences</p>
+                    <ul>
+                        <li>Gestion de 50 profils</li>
+                        <li>Suivi des missions</li>
+                        <li>Support technique standard</li>
+                        <li>1 utilisateur</li>
+                    </ul>
+                    <a href="#contact" class="btn">Essayer gratuitement</a>
+                </div>
+                <div class="tarif-card">
+                    <h3>Pro</h3>
+                    <p class="price">149€/mois</p>
+                    <p class="description">Pour les agences en croissance</p>
+                    <ul>
+                        <li>Gestion illimitée de profils</li>
+                        <li>Génération automatique de contrats</li>
+                        <li>Tableaux de bord avancés</li>
+                        <li>5 utilisateurs</li>
+                    </ul>
+                    <a href="#contact" class="btn">Choisir cette offre</a>
+                </div>
+                <div class="tarif-card">
+                    <h3>Entreprise</h3>
+                    <p class="price">Sur devis</p>
+                    <p class="description">Solution sur mesure</p>
+                    <ul>
+                        <li>Toutes les fonctionnalités Pro</li>
+                        <li>Intégrations API personnalisées</li>
+                        <li>Support prioritaire 24/7</li>
+                        <li>Formation dédiée</li>
+                    </ul>
+                    <a href="#contact" class="btn">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à révolutionner votre gestion de l'intérim ?</h2>
+            <p>Rejoignez les 200 agences qui utilisent déjà Tomoni pour simplifier leur quotidien.</p>
+            <a href="#contact" class="btn">Demander une démo</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Nom*" required>
+                    <input type="email" placeholder="Email*" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Téléphone">
+                    <input type="text" placeholder="Nom de votre agence">
+                </div>
+                <textarea placeholder="Votre message*" required></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tomoni. Tous droits réservés.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>TOMONI</h3>
+                    <p>Logiciel de gestion des intérimaires</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#temoin">Témoignages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@tomoni.fr</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de Paris, 75000 Paris</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
